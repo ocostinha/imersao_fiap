@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "73732a29-ce1f-45cc-a609-ee3f86ab4bb9",
+		"name": "Imersao FIAP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7521044",
+		"_collection_link": "https://dark-sunset-907085.postman.co/workspace/FIAP~53ae509e-d1ce-412b-adad-3bfe938dc6b4/collection/7521044-73732a29-ce1f-45cc-a609-ee3f86ab4bb9?action=share&source=collection_link&creator=7521044"
+	},
+	"item": [
+		{
+			"name": "CRUD",
+			"item": [
+				{
+					"name": "Primeira chamada",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/primeira_chamada",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"primeira_chamada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar uma entidade",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"felipe\",\n    \"sobrenome\": \"costa\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/primeira_chamada",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"primeira_chamada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Primeira consulta",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"felipe\",\n    \"sobrenome\": \"costa\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/primeira_chamada/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"primeira_chamada",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta completa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"felipe\",\n    \"sobrenome\": \"costa\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/primeira_chamada/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"primeira_chamada",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar sobrenome",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"felipe\",\n    \"sobrenome\": \"costa\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/primeira_chamada/atualizar/1?sobrenome=paltrinieri",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"primeira_chamada",
+								"atualizar",
+								"1"
+							],
+							"query": [
+								{
+									"key": "sobrenome",
+									"value": "paltrinieri"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar entidade",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"felipe\",\n    \"sobrenome\": \"costa\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/primeira_chamada/atualizar/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"primeira_chamada",
+								"atualizar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar entidade",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"felipe\",\n    \"sobrenome\": \"costa\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/primeira_chamada/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"primeira_chamada",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
