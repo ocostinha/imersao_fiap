@@ -1,36 +1,17 @@
 {
 	"info": {
-		"_postman_id": "73732a29-ce1f-45cc-a609-ee3f86ab4bb9",
+		"_postman_id": "0da03444-0f95-45a5-869e-4ac4364f5c6f",
 		"name": "Imersao FIAP",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "7521044",
-		"_collection_link": "https://dark-sunset-907085.postman.co/workspace/FIAP~53ae509e-d1ce-412b-adad-3bfe938dc6b4/collection/7521044-73732a29-ce1f-45cc-a609-ee3f86ab4bb9?action=share&source=collection_link&creator=7521044"
+		"_collection_link": "https://dark-sunset-907085.postman.co/workspace/FIAP~53ae509e-d1ce-412b-adad-3bfe938dc6b4/collection/7521044-0da03444-0f95-45a5-869e-4ac4364f5c6f?action=share&source=collection_link&creator=7521044"
 	},
 	"item": [
 		{
-			"name": "CRUD",
+			"name": "Clean Code",
 			"item": [
 				{
-					"name": "Primeira chamada",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/primeira_chamada",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"primeira_chamada"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Criar uma entidade",
+					"name": "Criar Usuario",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -58,7 +39,7 @@
 					"response": []
 				},
 				{
-					"name": "Primeira consulta",
+					"name": "Consultar Usuario",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -75,14 +56,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/primeira_chamada/1",
+							"raw": "http://localhost:8080/usuario/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"primeira_chamada",
+								"usuario",
 								"1"
 							]
 						}
@@ -90,7 +71,7 @@
 					"response": []
 				},
 				{
-					"name": "Consulta completa",
+					"name": "Consultar todos",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -107,14 +88,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/primeira_chamada/all",
+							"raw": "http://localhost:8080/usuario/all",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"primeira_chamada",
+								"usuario",
 								"all"
 							]
 						}
@@ -136,14 +117,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/primeira_chamada/atualizar/1?sobrenome=paltrinieri",
+							"raw": "http://localhost:8080/usuario/atualizar/1?sobrenome=paltrinieri",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"primeira_chamada",
+								"usuario",
 								"atualizar",
 								"1"
 							],
@@ -172,14 +153,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/primeira_chamada/atualizar/1",
+							"raw": "http://localhost:8080/usuario/atualizar/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"primeira_chamada",
+								"usuario",
 								"atualizar",
 								"1"
 							]
