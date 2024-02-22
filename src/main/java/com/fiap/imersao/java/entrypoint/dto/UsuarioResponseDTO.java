@@ -1,6 +1,5 @@
 package com.fiap.imersao.java.entrypoint.dto;
 
-import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
