@@ -21,6 +21,7 @@ public class JsonConfig {
     @Primary
     public ObjectMapper objectMapper() {
         JavaTimeModule module = new JavaTimeModule();
+
         module.addSerializer(LOCAL_DATETIME_SERIALIZER);
 
         return new ObjectMapper()
